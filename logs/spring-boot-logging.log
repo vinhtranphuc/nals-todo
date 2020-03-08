@@ -11556,3 +11556,20 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'nals_todo1'
 2020-03-08 20:46:07.146 DEBUG 17304 --- [main] c.t.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
 2020-03-08 20:46:07.993  WARN 17304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2020-03-08 20:46:08.209  INFO 17304 --- [main] com.tranphucvinh.TodoApplication         : Started TodoApplication in 6.378 seconds (JVM running for 6.752)
+2020-03-08 21:00:04.051  INFO 8744 --- [main] com.tranphucvinh.TodoApplication         : Starting TodoApplication on VINHTP with PID 8744 (E:\projects\eclipse-workspace\nals_todo\target\classes started by Vinh in E:\projects\eclipse-workspace\nals_todo)
+2020-03-08 21:00:04.055 DEBUG 8744 --- [main] com.tranphucvinh.TodoApplication         : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-03-08 21:00:04.055  INFO 8744 --- [main] com.tranphucvinh.TodoApplication         : No active profile set, falling back to default profiles: default
+2020-03-08 21:00:05.646  INFO 8744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-08 21:00:05.646  INFO 8744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-08 21:00:05.850  INFO 8744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-08 21:00:06.078  INFO 8744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-08 21:00:06.152  INFO 8744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2020-03-08 21:00:06.271  INFO 8744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-08 21:00:06.889  INFO 8744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-03-08 21:00:07.921  INFO 8744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-08 21:00:08.488 DEBUG 8744 --- [main] c.t.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2020-03-08 21:00:09.269  WARN 8744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-08 21:00:09.513  INFO 8744 --- [main] com.tranphucvinh.TodoApplication         : Started TodoApplication in 5.92 seconds (JVM running for 6.384)
+2020-03-08 21:00:33.639  INFO 8744 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-08 21:00:34.056 DEBUG 8744 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.username=? limit ?
+2020-03-08 21:00:34.082 DEBUG 8744 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.email=? limit ?
