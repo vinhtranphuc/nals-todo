@@ -1,0 +1,62 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tranphucvinh.mybatis.mapper.WorkMapper">
+	
+	<sql id="sqlPaginator">
+		<choose>
+			<when test="start_work !=null and start_work != '' and sizeOfPage != null and sizeOfPage != ''">
+				LIMIT ${start_work},${sizeOfPage}
+			</when>
+			<when test="sizeOfPage != null and sizeOfPage != ''">
+				LIMIT ${sizeOfPage}
+			</when>
+		</choose>
+	</sql>
+	
+	<sql id="sqlStatus">
+		CASE
+			WHEN
+				NOW() &lt; START_DATE 
+			THEN 'PLANING'
+			WHEN
+				NOW() &gt;= START_DATE AND NOW() &lt;= END_DATE
+			THEN 'DOING'
+			ELSE 'COMPLETE'
+		END
+	</sql>
+
+	<sql id="sqlWorksFields">
+		WORK_ID,
+		WORK_NAME,
+		DESCRIPTION,
+		USER_ID,
+		START_DATE,
+		END_DATE,
+		<include refid="sqlStatus"></include> AS STATUS
+	</sql>
+	
+	<sql id="sqlWorksWhere">
+		<where>
+			<if test="work_id !=null and work_id != ''">
+				AND WORK_ID = #{work_id}
+			</if>
+			<if test="status != null and status != ''">
+				AND #{status} = <include refid="sqlStatus"></include>
+			</if>
+		</where>
+	</sql>
+
+	<select id="selectWorks" resultType="com.tranphucvinh.mybatis.entity.Work">
+		SELECT
+			<include refid="sqlWorksFields"></include>
+		FROM
+			WORKS
+		<include refid="sqlPaginator"></include>
+	</select>
+
+	<select id="selectWorksTotCnt" resultType="int">
+		SELECT
+			COUNT(WORK_ID)
+		FROM WORKS
+	</select>
+</mapper>
