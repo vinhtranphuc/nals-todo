@@ -11573,3 +11573,220 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'nals_todo1'
 2020-03-08 21:00:33.639  INFO 8744 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-03-08 21:00:34.056 DEBUG 8744 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.username=? limit ?
 2020-03-08 21:00:34.082 DEBUG 8744 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.email=? limit ?
+2020-03-08 21:01:30.502  INFO 10716 --- [main] com.tranphucvinh.TodoApplication         : Starting TodoApplication on VINHTP with PID 10716 (E:\projects\eclipse-workspace\nals_todo\target\classes started by Vinh in E:\projects\eclipse-workspace\nals_todo)
+2020-03-08 21:01:30.507 DEBUG 10716 --- [main] com.tranphucvinh.TodoApplication         : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-03-08 21:01:30.508  INFO 10716 --- [main] com.tranphucvinh.TodoApplication         : No active profile set, falling back to default profiles: default
+2020-03-08 21:01:32.805  INFO 10716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-08 21:01:32.805  INFO 10716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-08 21:01:32.917  INFO 10716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-08 21:01:33.183  INFO 10716 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-08 21:01:33.294  INFO 10716 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2020-03-08 21:01:33.512  INFO 10716 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-08 21:01:34.386  INFO 10716 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-03-08 21:01:35.641  INFO 10716 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-08 21:01:36.295 DEBUG 10716 --- [main] c.t.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2020-03-08 21:01:37.118  WARN 10716 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-08 21:01:37.682  INFO 10716 --- [main] com.tranphucvinh.TodoApplication         : Started TodoApplication in 7.923 seconds (JVM running for 8.724)
+2020-03-08 21:01:43.190  INFO 10716 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-08 21:01:43.605 DEBUG 10716 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.username=? limit ?
+2020-03-08 21:01:43.637 DEBUG 10716 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.email=? limit ?
+2020-03-08 21:02:22.402 DEBUG 10716 --- [http-nio-8888-exec-2] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.username=? limit ?
+2020-03-08 21:02:22.415 DEBUG 10716 --- [http-nio-8888-exec-2] org.hibernate.SQL                        : select user0_.user_id as col_0_0_ from users user0_ where user0_.email=? limit ?
+2020-03-08 21:02:22.519 DEBUG 10716 --- [http-nio-8888-exec-2] org.hibernate.SQL                        : select role0_.role_id as role_id1_0_, role0_.name as name2_0_ from roles role0_ where role0_.name=?
+2020-03-08 21:02:22.640 DEBUG 10716 --- [http-nio-8888-exec-2] org.hibernate.SQL                        : insert into users (created_at, updated_at, email, name, password, username) values (?, ?, ?, ?, ?, ?)
+2020-03-08 21:02:22.661 DEBUG 10716 --- [http-nio-8888-exec-2] org.hibernate.SQL                        : insert into user_roles (user_id, role_id) values (?, ?)
+2020-03-08 21:09:31.526 ERROR 10716 --- [http-nio-8888-exec-4] c.t.security.JwtTokenProvider            : Expired JWT token
+2020-03-08 21:09:31.532 ERROR 10716 --- [http-nio-8888-exec-4] c.t.s.JwtAuthenticationEntryPoint        : Responding with unauthorized error. Message - Full authentication is required to access this resource
+2020-03-08 21:09:54.246 ERROR 10716 --- [http-nio-8888-exec-5] c.t.security.JwtTokenProvider            : Expired JWT token
+2020-03-08 21:09:54.247 ERROR 10716 --- [http-nio-8888-exec-5] c.t.s.JwtAuthenticationEntryPoint        : Responding with unauthorized error. Message - Full authentication is required to access this resource
+2020-03-08 21:10:04.218 DEBUG 10716 --- [http-nio-8888-exec-6] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_, user0_.created_at as created_2_2_, user0_.updated_at as updated_3_2_, user0_.email as email4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.username as username7_2_ from users user0_ where user0_.username=? or user0_.email=?
+2020-03-08 21:10:04.229 DEBUG 10716 --- [http-nio-8888-exec-6] org.hibernate.SQL                        : select roles0_.user_id as user_id1_1_0_, roles0_.role_id as role_id2_1_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from user_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2020-03-08 21:10:21.680 DEBUG 10716 --- [http-nio-8888-exec-7] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_0_, user0_.created_at as created_2_2_0_, user0_.updated_at as updated_3_2_0_, user0_.email as email4_2_0_, user0_.name as name5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from users user0_ where user0_.user_id=?
+2020-03-08 21:10:21.682 DEBUG 10716 --- [http-nio-8888-exec-7] org.hibernate.SQL                        : select roles0_.user_id as user_id1_1_0_, roles0_.role_id as role_id2_1_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from user_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2020-03-08 21:10:21.706 DEBUG 10716 --- [http-nio-8888-exec-7] c.t.interceptor.MyBatisQueryIntercept    : 
+==================== mapperId ====================
+com.tranphucvinh.mybatis.mapper.WorkMapper.selectWorksTotCnt
+==================== query ====================
+		SELECT
+			COUNT(WORK_ID)
+		FROM WORKS
+
+2020-03-08 21:10:21.730 DEBUG 10716 --- [http-nio-8888-exec-7] c.t.m.m.WorkMapper.selectWorksTotCnt     : ==>  Preparing: SELECT COUNT(WORK_ID) FROM WORKS 
+2020-03-08 21:10:21.740 DEBUG 10716 --- [http-nio-8888-exec-7] c.t.m.m.WorkMapper.selectWorksTotCnt     : ==> Parameters: 
+2020-03-08 21:10:21.761 DEBUG 10716 --- [http-nio-8888-exec-7] c.t.m.m.WorkMapper.selectWorksTotCnt     : <==      Total: 1
+2020-03-08 21:10:21.768 ERROR 10716 --- [http-nio-8888-exec-7] c.t.controller.TodoController            : Excecption : com.tranphucvinh.exception.BadRequestException: The specified page exceeds the limit
+	at com.tranphucvinh.service.TodoService.getWorks(TodoService.java:69)
+	at com.tranphucvinh.controller.TodoController.getWorks(TodoController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at com.tranphucvinh.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:45)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-08 21:10:35.326 DEBUG 10716 --- [http-nio-8888-exec-8] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_0_, user0_.created_at as created_2_2_0_, user0_.updated_at as updated_3_2_0_, user0_.email as email4_2_0_, user0_.name as name5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from users user0_ where user0_.user_id=?
+2020-03-08 21:10:35.328 DEBUG 10716 --- [http-nio-8888-exec-8] org.hibernate.SQL                        : select roles0_.user_id as user_id1_1_0_, roles0_.role_id as role_id2_1_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from user_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2020-03-08 21:10:35.332 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.interceptor.MyBatisQueryIntercept    : 
+==================== mapperId ====================
+com.tranphucvinh.mybatis.mapper.WorkMapper.selectWorksTotCnt
+==================== query ====================
+		SELECT
+			COUNT(WORK_ID)
+		FROM WORKS
+
+2020-03-08 21:10:35.338 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.m.WorkMapper.selectWorksTotCnt     : ==>  Preparing: SELECT COUNT(WORK_ID) FROM WORKS 
+2020-03-08 21:10:35.339 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.m.WorkMapper.selectWorksTotCnt     : ==> Parameters: 
+2020-03-08 21:10:35.340 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.m.WorkMapper.selectWorksTotCnt     : <==      Total: 1
+2020-03-08 21:10:35.375 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.interceptor.MyBatisQueryIntercept    : 
+==================== mapperId ====================
+com.tranphucvinh.mybatis.mapper.WorkMapper.selectWorks
+==================== query ====================
+		SELECT
+		WORK_ID,
+		WORK_NAME,
+		DESCRIPTION,
+		USER_ID,
+		START_DATE,
+		END_DATE,
+		CASE
+			WHEN
+				NOW() < START_DATE 
+			THEN 'PLANING'
+			WHEN
+				NOW() >= START_DATE AND NOW() <= END_DATE
+			THEN 'DOING'
+			ELSE 'COMPLETE'
+		END
+	  AS STATUS
+		FROM
+			WORKS
+				LIMIT 2
+
+2020-03-08 21:10:35.382 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.WorkMapper.selectWorks      : ==>  Preparing: SELECT WORK_ID, WORK_NAME, DESCRIPTION, USER_ID, START_DATE, END_DATE, CASE WHEN NOW() < START_DATE THEN 'PLANING' WHEN NOW() >= START_DATE AND NOW() <= END_DATE THEN 'DOING' ELSE 'COMPLETE' END AS STATUS FROM WORKS LIMIT 2 
+2020-03-08 21:10:35.383 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.WorkMapper.selectWorks      : ==> Parameters: 
+2020-03-08 21:10:35.390 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.WorkMapper.selectWorks      : <==      Total: 2
+2020-03-08 21:10:35.394 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.interceptor.MyBatisQueryIntercept    : 
+==================== mapperId ====================
+com.tranphucvinh.mybatis.mapper.UserMapper.selectUsers
+==================== query ====================
+		SELECT
+		A.USER_ID,
+		A.NAME,
+		A.USERNAME,
+		A.EMAIL,
+		C.NAME AS ROLE_NAME
+		FROM
+			USERS A JOIN USER_ROLES B
+			ON A.USER_ID = B.USER_ID
+			JOIN ROLES C ON B.ROLE_ID = C.ROLE_ID
+			JOIN WORKS D ON A.USER_ID = D.USER_ID
+		 WHERE  D.WORK_ID = '2'
+
+2020-03-08 21:10:35.401 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.UserMapper.selectUsers      : ==>  Preparing: SELECT A.USER_ID, A.NAME, A.USERNAME, A.EMAIL, C.NAME AS ROLE_NAME FROM USERS A JOIN USER_ROLES B ON A.USER_ID = B.USER_ID JOIN ROLES C ON B.ROLE_ID = C.ROLE_ID JOIN WORKS D ON A.USER_ID = D.USER_ID WHERE D.WORK_ID = ? 
+2020-03-08 21:10:35.402 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.UserMapper.selectUsers      : ==> Parameters: 2(String)
+2020-03-08 21:10:35.403 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.UserMapper.selectUsers      : <==      Total: 0
+2020-03-08 21:10:35.404 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.interceptor.MyBatisQueryIntercept    : 
+==================== mapperId ====================
+com.tranphucvinh.mybatis.mapper.UserMapper.selectUsers
+==================== query ====================
+		SELECT
+		A.USER_ID,
+		A.NAME,
+		A.USERNAME,
+		A.EMAIL,
+		C.NAME AS ROLE_NAME
+		FROM
+			USERS A JOIN USER_ROLES B
+			ON A.USER_ID = B.USER_ID
+			JOIN ROLES C ON B.ROLE_ID = C.ROLE_ID
+			JOIN WORKS D ON A.USER_ID = D.USER_ID
+		 WHERE  D.WORK_ID = '3'
+
+2020-03-08 21:10:35.411 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.UserMapper.selectUsers      : ==>  Preparing: SELECT A.USER_ID, A.NAME, A.USERNAME, A.EMAIL, C.NAME AS ROLE_NAME FROM USERS A JOIN USER_ROLES B ON A.USER_ID = B.USER_ID JOIN ROLES C ON B.ROLE_ID = C.ROLE_ID JOIN WORKS D ON A.USER_ID = D.USER_ID WHERE D.WORK_ID = ? 
+2020-03-08 21:10:35.411 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.UserMapper.selectUsers      : ==> Parameters: 3(String)
+2020-03-08 21:10:35.413 DEBUG 10716 --- [http-nio-8888-exec-8] c.t.m.mapper.UserMapper.selectUsers      : <==      Total: 1
+2020-03-08 21:12:00.066 ERROR 10716 --- [http-nio-8888-exec-9] c.t.s.JwtAuthenticationEntryPoint        : Responding with unauthorized error. Message - Full authentication is required to access this resource
+2020-03-08 21:12:12.514 DEBUG 10716 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_0_, user0_.created_at as created_2_2_0_, user0_.updated_at as updated_3_2_0_, user0_.email as email4_2_0_, user0_.name as name5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from users user0_ where user0_.user_id=?
+2020-03-08 21:12:12.516 DEBUG 10716 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select roles0_.user_id as user_id1_1_0_, roles0_.role_id as role_id2_1_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from user_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2020-03-08 21:12:12.520  WARN 10716 --- [http-nio-8888-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /api/user/me
+2020-03-08 21:12:41.459 DEBUG 10716 --- [http-nio-8888-exec-2] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_0_, user0_.created_at as created_2_2_0_, user0_.updated_at as updated_3_2_0_, user0_.email as email4_2_0_, user0_.name as name5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from users user0_ where user0_.user_id=?
+2020-03-08 21:12:41.462 DEBUG 10716 --- [http-nio-8888-exec-2] org.hibernate.SQL                        : select roles0_.user_id as user_id1_1_0_, roles0_.role_id as role_id2_1_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from user_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2020-03-08 21:13:14.010 DEBUG 10716 --- [http-nio-8888-exec-3] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_0_, user0_.created_at as created_2_2_0_, user0_.updated_at as updated_3_2_0_, user0_.email as email4_2_0_, user0_.name as name5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from users user0_ where user0_.user_id=?
+2020-03-08 21:13:14.012 DEBUG 10716 --- [http-nio-8888-exec-3] org.hibernate.SQL                        : select roles0_.user_id as user_id1_1_0_, roles0_.role_id as role_id2_1_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from user_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2020-03-08 21:13:14.025 DEBUG 10716 --- [http-nio-8888-exec-3] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_, user0_.created_at as created_2_2_, user0_.updated_at as updated_3_2_, user0_.email as email4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.username as username7_2_ from users user0_ where user0_.username=?
