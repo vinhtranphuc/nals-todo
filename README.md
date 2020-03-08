@@ -1,6 +1,5 @@
 # nals-todo
-My java test at NALS
-REST API for Todo App.
+My java test at NALS - REST API for Todo App.
 
 Enviroment :
   JDK 8
@@ -16,14 +15,6 @@ Functions :
 
 Tutorial :
   1. Sign up user
-     API path : http://localhost:8888/api/auth/signup
-     Method : POST
-     Body : 
-     Ex : 
-       {
-          "name":"Tran Phuc Vinh",
-          "username":"admin",
-          "email":"vinhtranphuc@gmail.com",
-          "password":"111111"
-       }
-     ![alt text](https://github.com/vinhtranphuc/lifecode_client/blob/master/home-template/img/ad-1.jpg)
+     - API path : http://localhost:8888/api/auth/signup
+     - Method : POST
+     ![alt text](https://github.com/vinhtranphuc/nals-todo/blob/master/tutorial-img/signup.png)
