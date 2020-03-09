@@ -5,6 +5,8 @@ Enviroment :
   * JDK 8
   * MySQL 5.7
   * Spring Boot 2.2.1
+  * JPA
+  * Mybatis
 
 Functions :
   1. Sign up user
